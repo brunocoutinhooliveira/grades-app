@@ -28,3 +28,5 @@ Procfile
 
 package-lock.json
 yarn.lock
+
+grades.csv
