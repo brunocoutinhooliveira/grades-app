@@ -1,0 +1,19 @@
+mongoimport --uri "mongodb+srv://bruno:TtaURPbamHyhO1NfiYeK@
+bootcampigti-nv2aq.gcp.mongodb.net/igti?retryWrites=true&w=majority"
+ --collection grades --type csv --file grades.csv --headerline
+
+git branch -d "'feature/CriaRotas'"
+
+rm -rf .git
+
+git init
+
+git remote add master https://github.com/brunocoutinhooliveira/grades-api.git
+
+nodemon -r dotenv/config --experimental-modules app.js
+
+git remote add master https://github.com/brunocoutinhooliveira/grades-app.git
+
+git remote rename master origin
+
+git push -u origin master
