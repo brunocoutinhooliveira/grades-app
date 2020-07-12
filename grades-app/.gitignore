@@ -24,8 +24,6 @@ yarn-error.log*
 
 .env
 
-Procfile
-
 package-lock.json
 yarn.lock
 
